@@ -1,0 +1,793 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=SUSE:wght@100..800&display=swap&subset=latin-ext');
+
+
+/*
+
+font-family: 'Karla', sans-serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Montserrat', sans-serif;
+
+*/
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	/*list-style: none;*/
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*importante para que funcione el ocultamiendo con el script*/
+.hidden {
+    display: none;
+}
+
+
+
+
+h1 
+{
+	position: relative;
+	margin: 0;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 0.2vw;
+	font-family: 'Poiret One', serif;
+	font-weight: 1px;
+	font-size: 5vmin;
+}
+
+h2
+{
+	position: relative;
+	text-decoration: none;
+	color: #fff;
+    width: fit-content;
+	
+	font-family:'Poiret One', sans-serif;
+	
+	font-weight: 2px;
+	font-size: 4vmin;
+}
+
+h3
+{
+    position: relative;
+
+	display: flex;
+    flex: none;
+
+	margin: 3vw 0 0 0;
+	
+    
+    text-decoration: none;
+	color:#fff;
+    font-family: 'SUSE', sans-serif;
+	font-weight: 100;
+	
+	
+	font-size: 2.5vmin;
+
+    white-space: normal; /* Permite que el texto salte a la siguiente línea */
+    overflow-wrap: break-word; /* Rompe las palabras largas para que se ajusten al contenedor */
+    word-wrap: break-word; /* Compatibilidad con versiones antiguas de navegadores */
+    max-width: 100%;
+
+    transition: 1s;
+}
+
+h4
+{
+	position: relative;
+	margin: 1vh 0 1vh 0;
+	text-decoration: none;
+	color: #ecb67aff;
+	letter-spacing: 0.2vw;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: auto;
+	font-size: 3vmin;
+}
+
+h5
+{
+	position: relative;
+	margin: 1vh 0 1vh 0;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 0.2vw;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: auto;
+	font-size: 2vmin;
+}
+
+p
+{
+	position: relative;
+	margin: 3vw 0 0 0;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 0.07vw;
+	font-family: 'Manrope', sans-serif;
+	font-weight: auto;
+	font-size: 2vmin;
+}
+
+/*header.....................................................*/
+
+header
+{	
+	justify-content: center;
+	align-items: center;
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	padding:0px;
+	z-index: 100000;
+}
+
+.header__nav
+{	height: 10vmin;
+	
+	display: flex;
+	flex-wrap: wrap;
+
+	position: relative;
+
+	justify-content: none;
+	align-items: center;
+
+	background: #1d1d1d33;
+	backdrop-filter: blur(8px);
+	
+	clip-path: polygon(0vmin 0vmin,0vmin 10vmin, 100vw 10vmin, 100vw 0vmin);
+
+	border-bottom: 2px solid #cececeaa;
+	transition: 1s;
+}
+
+.header__nav--33
+{
+	width: 33vw;
+		
+	display: flex;
+	flex-wrap: wrap;
+
+	position: relative;
+
+	justify-content: center;
+	align-items: center;
+
+	transition: 1s;
+}
+
+.header_logo
+{
+	position: relative;
+	height: 8vmin;
+
+	transition: 1s;
+}
+
+.header_logo:hover
+{
+	height: 6vmin;
+}
+
+.header__nav--sep
+{
+	background:  #ffffff66;
+
+	height: 6vmin;
+	width: 2px;
+	position: relative;
+
+	transition: 1s;
+}
+
+.header__nav--66
+{	
+	width: 63vw;
+
+	display: flex;
+	flex-wrap: wrap;
+
+	position: relative;
+
+	justify-content: center;
+	align-items: center;
+
+	background-color: #ff000000;
+}
+
+.header__nav--66__tipo
+{	
+	margin:0.0vh 1vw 0.0vh 1vw;
+	position: relative;
+	display: flex;
+
+	position: relative;
+	padding: 0.2vh 1vw 0.3vh 1vw;
+	
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Poiret One', sans-serif;
+	font-weight: 1%;
+	font-size: 1.6vmax;
+	border-radius: 0.5vh;
+	transition: 1s;
+}
+
+.header__nav--66__tipo:hover {
+	
+	background-color:#b1f02899 ;
+	padding: 0.3vh 1vw 0.4vh 1vw;
+	margin: 0 2vw;
+}
+
+header.sticky .header__nav
+{	
+	padding:0vh;
+	background: #ffffff22;
+	
+	
+	
+	backdrop-filter: blur(2px);
+	border-bottom: 2px solid #cecece00;
+
+    clip-path: polygon(0vmin 0vmin,0vmin 10vmin, 30vmin 10vmin, 35vmin 0vmin);
+}
+
+header.sticky .header__nav:hover
+{	
+	background: #1d1d1d66;
+	backdrop-filter: blur(8px);
+	    
+	border-bottom: 2px solid #cececeaa;
+	clip-path: polygon(0vmin 0vmin,0vmin 10vmin, 100vw 10vmin, 100vw 0vmin);
+}
+
+header.sticky .header__nav--33
+{
+	width: 32.5vmin;
+}
+
+header.sticky:hover .header__nav--33
+{
+	width: 33vw;
+}
+
+header.sticky .header__nav--sep
+{
+	background: #ffffff00;
+}
+
+header.sticky:hover .header__nav--sep
+{
+	background: #ffffff66;
+}
+
+header.sticky .header__nav--66__tipo
+{
+	padding: 0vmin;
+	
+
+	font-weight: 0%;
+	font-size: 0vh;
+
+    color: #ffffff00;
+}
+
+header.sticky:hover .header__nav--66__tipo
+{
+	padding: 0.2vh 1vw 0.3vh 1vw;
+	
+	text-decoration: none;
+	font-weight: 1%;
+	font-size: 1.6vmax;
+
+    color:#ffffffbb ;
+	background-color: #58e05800;
+}
+
+header.sticky:hover .header__nav--66__tipo:hover
+{
+	background-color:#b1f02899 ;
+	padding: 0.3vh 1vw 0.4vh 1vw;
+	margin: 0 2vw;
+}
+
+/*body........................................................*/
+body
+{
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background: #131313ff;
+
+	background-image: url(img/patron_logo.svg);
+	background-size: cover;
+	background-repeat: repeat;
+  	background-attachment: fixed;
+}
+
+
+/* boxes design ...................................................*/
+.totalbox1
+{	
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	
+	justify-content: center;
+	align-items: center;
+	
+	margin: 30vmin 0;
+	padding: 0vmin 8vw;
+	
+	border-radius: 5vw;
+
+	/*background-color: #550;*/
+}
+
+.totalbox__img
+{
+	position: relative;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width: auto;
+	min-width: 380px;
+	margin:0vh 3vw;
+}
+
+
+.totalbox__text
+{
+	position: relative;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width: auto;
+
+	margin:6vh 3vw;
+	min-width: 380px;
+}
+
+.totalbox__titular
+{
+	position: relative;
+	
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width: auto;
+	border: 2px solid #b1f028aa;
+	border-radius: 0vw;
+	/*background-color: #101010ff;*/
+
+	
+	margin: 0vh 3vw;;
+	padding:6vw 6vw;
+	min-width: 250px;
+}
+
+.button_w
+{	
+
+	position: relative;
+	display: inline-table;
+
+
+	padding: 0.7vmax;
+	margin: 7vmin;
+	background-color: none;
+
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 0.2vw;
+	font-family: 'SUSE', serif;
+	font-weight: 100;
+	font-size: 3.3vmin;
+
+	border: 2px solid #b1f028aa;
+	border-radius: 0vmin;
+	transition-duration: 0.4s;
+}
+
+
+.button_w:hover {
+	background-color: #b1f028aa;
+	color: #fff;
+}
+
+.totalbox2
+{	
+	/*display: flex;*/
+	position: relative;
+	/*max-width: 195vh;*/
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+
+	margin: 30vmin 0;
+	padding: 0vmin 6vw;
+}
+
+
+.img_vertical
+{
+	position: relative;
+
+	width: 100%;
+	min-width: 250px;
+
+	border-radius:1.5vmin;
+}
+
+.lateral
+{	position: absolute;
+	top: 0vh;
+
+    right:6vw;
+    height: 14%;
+    width:20vw;
+      
+    
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+	
+
+    padding:0vw 1.8vw;
+
+    background: #ffffff22;
+	backdrop-filter: blur(2px);
+    border-radius: 0vw 1.5vmin 0vw 0vw;
+    
+	z-index:10;
+    transition: 1s;
+	border: 2px solid #ffffff00;
+}
+
+.lateral:hover
+{   
+      padding:1vw 4vw;	
+    height: 100%;
+        width: 33%;
+		background: #1d1d1d66;
+		backdrop-filter: blur(8px);
+    border-radius: 0vw 1.5vmin 1.5vmin 0vw;
+	border: 2px solid #b1f028aa;
+}
+
+.lateral__titulo
+{   
+	position: relative;
+
+    height: 0%;
+	
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+	align-items: center;
+
+    flex: none;
+    width: fit-content;
+
+
+	transition: 1s;
+}
+
+.lateral:hover .lateral__titulo
+{
+	height: 30%;
+}
+
+
+.lateral__contenido
+{	
+    position: relative;
+
+    height: 70%;
+    
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+	align-items: center;
+
+    flex: 1;
+
+	transition: 1s;
+}
+
+.lateral__titulo h2
+{
+	font-size: 1.8vw;
+}
+
+.lateral__contenido h3
+{
+	padding:0vw;
+	margin:0vw;
+	font-size: 2.5vmin;
+	color: #ffffff00;
+}
+
+.lateral:hover .lateral__contenido h3
+{
+	color:#fff;
+}
+
+
+
+/*.....body.....................................*/
+
+/*.....footer.....................................*/
+
+.fire
+{
+	position: relative;
+	bottom: 0%;
+
+	height: 90vh;
+	width: 100%;
+	display: flex;
+	background: linear-gradient(to top,#ffffff22 0%, rgba(0, 128, 0, 0) 65%);
+	background-size: cover;
+}
+
+.plant-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto; /* La altura será determinada automáticamente por la proporción de la imagen */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+    z-index: 100; /* Asegura que esté detrás del contenido del footer */
+}
+
+.plant-container img {
+    width: 100%; /* La imagen ocupará el ancho completo del contenedor */
+    height: auto; /* La altura se ajustará automáticamente */
+    display: block;
+}
+
+footer
+{
+	display: flex;
+	flex-wrap: wrap;
+
+	position: relative;
+
+	height: auto;
+	width: auto;
+	min-height: 70vh;
+	
+	border: 2px solid #b1f028aa;
+	
+	justify-content: center;
+	align-items: center;
+
+	padding:1vmax 3vmax;
+	margin:5vw 5vw;
+}
+
+.footerbox__1
+{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+
+	min-width: 16vmax;
+
+	margin:3vw 1.5vw 3vw 1.5vw;
+	
+}
+
+
+.footerbox__2
+{
+	position: relative;
+	flex: 2;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width: auto;
+	
+	min-width: 20vmax;
+
+	margin:3vw 1.5vw 3vw 1.5vw;
+	
+}
+
+.footer__2--buttonredes
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: none;
+	border: 2px solid #fff;
+	
+	margin: 1vmax 0 1vmax 0;
+	padding: 0.6vmax;
+		
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 0.2vw;
+	font-family:'Poiret One', serif;
+	font-weight: auto;
+	font-size: 1.5vmax;
+	color: #fff;
+
+	border: 2px solid #b1f028aa;
+	z-index: 10000;
+	
+	transition-duration: 1s;
+}
+
+.footer__2--buttonredes:hover {
+	background-color: #b1f028aa;
+	border: 2px solid #b1f028aa;
+	backdrop-filter: blur(3px);
+}
+
+
+.footerlogo
+{
+	position: relative;
+	display: flex;
+	flex: 1;
+	height: 100%;
+}
+
+.img_redes
+{
+	position: relative;
+	width:  2vmax;
+	margin: 0 1vw 0 0;
+}
+
+.img_bgplantas
+{
+	position: absolute;
+
+	bottom: 0;
+	width:  100px;
+	height: auto;
+	/*z-index: -1000;*/
+}
+
+
+
+
+
+
+
+/*slider...................................*/
+
+
+/*........................................
+..........................................
+.........................................*/
+
+
+.slideralto1 {
+	position: relative;
+	background-image: url(img/pry01/a3_1.jpg);
+	background-size: cover;
+
+	width: 100%;
+
+	height:100vh;
+	
+	animation: animate_slider1 40s infinite;
+}
+
+
+.sliderbox_alto
+{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+
+	background-color: none;
+
+	justify-content: center;
+	align-items: center;	
+
+	width: 100%;
+	height: auto;	
+
+	margin: 0;
+	padding:0 0 0 40vw;
+	top: 70%;
+}
+
+.sliderbox__into--purple
+{
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	
+	height: auto;
+	width: 100%;
+	
+	background-color: #1d1d1d33;
+
+	margin: 0;
+	padding: 1.5vmax 6vmax 1.5vmax 3vmax;
+	
+	min-width: 250px;
+	border-radius: 0;
+	backdrop-filter: blur(8px);
+	border: 2px solid #b1f028aa;
+}
+
+/*................................................*/
+
+@keyframes animate_slider1 {
+	0% {
+		background-image: url(img/01.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+
+	8.3333333% {background-position: right;}
+
+	16.666666666% {
+		background-image: url(img/02.jpg);
+		background-size: cover;
+	}
+
+	25% {background-position: left;}
+
+	33.3333333333% {
+		background-image: url(img/03.jpg);
+		background-size: cover;
+	}
+
+	41.66666% {background-position: right;}
+	
+	50% {
+		background-image: url(img/04.jpg);
+		background-size: cover;
+	}
+
+	58.33333% {background-position: left;}
+
+	64.66666%  {
+		background-image: url(img/05.jpg);
+		background-size: cover;
+	}
+	
+
+	75% {background-position: right;}
+
+	83.3% {
+		background-image: url(img/06.jpg);
+		background-size: cover;
+	}
+	
+	91.66% {background-position: left;}
+	
+
+	100%{
+		background-image: url(img/01.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+}
