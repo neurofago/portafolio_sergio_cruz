@@ -694,7 +694,7 @@ footer
 
 	height:100vh;
 	
-	animation: animate_slider1 40s infinite;
+	animation: animate_slider1 60s infinite;
 }
 
 
@@ -741,7 +741,7 @@ footer
 
 @keyframes animate_slider1 {
 	0% {
-		background-image: url(img/01.jpg);
+		background-image: url(img/portada1.png);
 		background-size: cover;
 		background-position: center;
 	}
@@ -749,28 +749,28 @@ footer
 	8.3333333% {background-position: right;}
 
 	16.666666666% {
-		background-image: url(img/02.jpg);
+		background-image: url(img/portada2.png);
 		background-size: cover;
 	}
 
-	25% {background-position: left;}
+	25% {background-position: left;}	
 
 	33.3333333333% {
-		background-image: url(img/03.jpg);
+		background-image: url(img/portada3.png);
 		background-size: cover;
 	}
 
 	41.66666% {background-position: right;}
 	
 	50% {
-		background-image: url(img/04.jpg);
+		background-image: url(img/portada4.png);
 		background-size: cover;
 	}
 
 	58.33333% {background-position: left;}
 
 	64.66666%  {
-		background-image: url(img/05.jpg);
+		background-image: url(img/portada5.png);
 		background-size: cover;
 	}
 	
@@ -778,7 +778,7 @@ footer
 	75% {background-position: right;}
 
 	83.3% {
-		background-image: url(img/06.jpg);
+		background-image: url(img/portada6.png);
 		background-size: cover;
 	}
 	
@@ -786,7 +786,7 @@ footer
 	
 
 	100%{
-		background-image: url(img/01.jpg);
+		background-image: url(img/portada1.png);
 		background-size: cover;
 		background-position: center;
 	}
