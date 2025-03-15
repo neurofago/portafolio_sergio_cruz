@@ -11,6 +11,20 @@
     -ms-touch-action: pan-y;
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
+
+    width: auto;
+    height: auto;
+
+    min-height: 300px;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.slick-slider.slick-initialized {
+    visibility: visible;
+    opacity: 1;
 }
 
 .slick-list {
@@ -46,6 +60,9 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+
+    display: flex !important; /* Asegura que los elementos estén en fila */
+    align-items: center;
 }
 
 .slick-track:before,
@@ -75,6 +92,8 @@
 
 .slick-slide img {
     display: block;
+    width: 100%;
+    height: auto; /* Mantén la proporción de las imágenes */
 }
 
 .slick-slide.slick-loading img {

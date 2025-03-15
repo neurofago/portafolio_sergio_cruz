@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    
+    <title>Portafolio | Sergio Cruz</title>
+
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" type="text/css" href="style_galery1.css">
+            
+    <link rel="stylesheet" type="text/css" href="stylenuevo.css">
+</head>
+
+
+<body>
+    <!-- header ...............................-->
+            
+    <header class="sticky">
+        <nav class="header__nav">
+            <nav class="header__nav--33">
+                <a   href="#" onclick="showSection('index')">
+                    <img loading="lazy" class="header_logo" src="img/logo_completo.svg" >
+                </a>
+            </nav>
+
+            <nav class="header__nav--sep">       
+            </nav>
+
+            <nav class="header__nav--66">
+                <a class="header__nav--66__tipo" href="#" onclick="showSection('arte')">Arte Digital</a>
+
+                <a class="header__nav--66__tipo" href="#" onclick="showSection('industrial')">Diseño Industrial</a>
+
+                <a class="header__nav--66__tipo" href="#" onclick="showSection('editorial')">Diseño Editorial</a>
+            </nav>
+        </nav>
+    </header>
+
+    <!-- header ...............................-->
+    
+    <!------------Contenido de la página---------------->
+
+    <!-- Sección index -->
+    <div id="index" class="section">
+        
+        <!--- slider alto ----------------------------->
+
+        <div class="slideralto1">
+            <div class="sliderbox_alto">
+                <article class="sliderbox__into--purple">
+                    <h1>Portafolio de Sergío Cruz</h1>
+                    
+                </article>
+            </div>
+        </div>
+       
+        
+        <!--- total box presentacion ----------------------------->
+        
+        <div class="totalbox1">
+            <article class="totalbox__titular">
+                <h2>Presentación</h2>
+                <h3>Mi nombre es Sergio Cruz, diseñador y artista digital. Este portafolio está dividido en tres galerías independientes, cada una representa un campo profesional relacionado con el diseño y el arte.
+                </h3>
+                
+            </article>
+        </div>
+
+        <!--- total box arte ----------------------------->
+
+        <div class="totalbox1">
+            <div class="totalbox__img">
+                <div class="galeria">
+                    <img class="img_vertical" src="img/ad1.jpg" alt="Mueble de Estilo Amati">
+                    <img class="img_vertical" src="img/ad2.jpg" alt="Mueble de Estilo Amati">
+                    <img class="img_vertical" src="img/ad3.jpg" alt="Mueble de Estilo Amati">
+                    <img class="img_vertical" src="img/ad4.jpg" alt="Mueble de Estilo Amati">
+                    <img class="img_vertical" src="img/ad5.jpg" alt="Mueble de Estilo Amati">
+                </div>
+            </div>
+            <article class="totalbox__text">
+                <h2>Arte Digital</h2>
+                
+                <h3>En esta galería podrás conocer mi trabajo como modelador 3d, ilustrador digital, animador entre otras formas de manifestación directamente vinculadas al mundo del arte y la tecnología.
+                </h3>
+                <a href="#" onclick="showSection('arte')" class="button_w">Galería de arte digital</a>
+            </article>
+        </div>
+        
+        <!--- total box diseño ----------------------------->
+
+        <div class="totalbox1">
+            
+            <article class="totalbox__text">
+                <h2>Diseño Industrial</h2>
+                
+                <h3>En este cuadro están los proyectos de diseño de producto, arte decorativo, diseño de moda, diseño de interiores y proyectos que implican procesos industriales o piezas materiales.
+                </h3>
+                <a href="#" onclick="showSection('industrial')" class="button_w">Proyectos de Diseño Industrial</a>
+            </article>
+            <div class="totalbox__img">
+                <div class="galeria">
+                    <img loading="lazy"class="img_vertical" src="img/di1.jpg" alt="Mueble de Estilo Amati">
+                    <img loading="lazy"class="img_vertical" src="img/di2.png" alt="Mueble de Estilo Amati">
+                    <img loading="lazy"class="img_vertical" src="img/di3.jpg" alt="Mueble de Estilo Amati">
+                    <img loading="lazy"class="img_vertical" src="img/di4.jpg" alt="Mueble de Estilo Amati">
+                    <img loading="lazy"class="img_vertical" src="img/di5.png" alt="Mueble de Estilo Amati">
+                </div>
+            </div>
+        </div>
+
+        <!--- total box editorial ----------------------------->
+
+        <div class="totalbox1">
+            
+
+            <div class="totalbox__img">
+                <div class="galeria">
+                    <img loading="lazy"class="img_vertical" src="img/ed_01.png" alt="Mueble de Estilo Amati">
+                    <img loading="lazy"class="img_vertical" src="img/ed_02.png" alt="Mueble de Estilo Amati">
+                    <img loading="lazy"class="img_vertical" src="img/ed_03.png" alt="Mueble de Estilo Amati">
+                    <img loading="lazy"class="img_vertical" src="img/ed_04.png" alt="Mueble de Estilo Amati">
+                    <img loading="lazy"class="img_vertical" src="img/ed_05.png" alt="Mueble de Estilo Amati">
+                </div>
+            </div>
+            <article class="totalbox__text">
+                <h2>Diseño Editorial</h2>
+                
+                <h3>El diseño editorial ha sido un cambio de paradigma para mi desarrollo profesional. A continuación puedes conocer algunos proyectos editoriales en los que eh colaborado.
+                </h3>
+                <a href="#" onclick="showSection('editorial')" class="button_w">Diseño editorial y Maquetación</a>
+            </article>
+        </div>
+
+
+
+    </div>
+
+    <!-- Sección arte -->
+    <div id="arte" class="section hidden portfolio">
+
+        <!--- slider alto ----------------------------->
+        <div class="slideralto1">
+            <div class="sliderbox_alto">
+                <article class="sliderbox__into--purple">
+                    <h1>Arte Digital</h1>
+                    
+                </article>
+            </div>
+        </div>
+
+        <!--- total box presentacion ----------------------------->
+        
+        <div class="totalbox1">
+            <article class="totalbox__titular">
+                <h2>Modelado 3d e ilustración</h2>
+                
+                <h3>En este apartado podrás conocer mi trabajo como modelador 3d, ilustrador digital, animador entre otros proyectos directamente vinculados al mundo del arte.
+                </h3>
+                
+            </article>
+        </div>
+        
+
+    </div>
+
+    <!-- Sección industrial -->
+    <div id="industrial" class="section hidden portfolio">
+        <!--- slider alto ----------------------------->
+        <div class="slideralto1">
+            <div class="sliderbox_alto">
+                <article class="sliderbox__into--purple">
+                    <h1>Diseño Industrial</h1>
+                    
+                </article>
+            </div>
+        </div>
+        <div class="totalbox1">
+            <article class="totalbox__titular">
+                <h2>Modelado 3d e ilustración</h2>
+                
+                <h3>En este apartado podrás conocer mi trabajo como modelador 3d, ilustrador digital, animador entre otros proyectos directamente vinculados al mundo del arte.
+                </h3>
+                
+            </article>
+        </div>
+    </div>
+
+    <!-- Sección editorial -->
+    <div id="editorial" class="section hidden portfolio">
+        <!--- slider alto ----------------------------->
+        <div class="slideralto1">
+            <div class="sliderbox_alto">
+                <article class="sliderbox__into--purple">
+                    <h1>Maquetación y Diseño Editorial</h1>
+                    
+                </article>
+            </div>
+        </div>
+
+        <div class="totalbox1">
+            <article class="totalbox__titular">
+                <h2>Diseño y Arte Editorial</h2>
+                
+                <h3>El diseño editorial ha sido un cambio de paradigma para mi desarrollo profesional. A continuación puedes conocer algunos proyectos editoriales en los que eh colaborado.
+                </h3>
+                
+            </article>
+        </div>
+
+         <!--- sección 1 ----------------------------->
+        
+         <div id="arte_galeria1" class="totalbox2 section_galery">
+
+
+            <nav class="loading"><h2>LOADING</h2></nav>  
+
+            <nav class="lateral">
+                <nav class="lateral__contenido">
+                    <a class="secciones" href="#" onclick="showSection2('arte_galeria1', event)"><h3>Maquetación de Libros</h3></a>
+                    <a class="secciones" href="#" onclick="showSection2('arte_galeria2', event)"><h3>Arte y Diseño de Portadas</h3></a>
+                    <a class="secciones" href="#" onclick="showSection2('arte_galeria3', event)"><h3>Álbum de Música</h3></a>
+
+                </nav>
+
+                <nav class="lateral__titulo">
+                    <h2>Maquetación de Libros Narrativos</h2>
+                </nav>
+
+                <nav class="lateral__contenido">
+                    <h3>Mustra de maquetación y arte para el libro narrativo "CONTRADICCIONES" del Dr. Eduardo Gómez, la cual ejemplifica mi trabajo como diseñador editorial. Se hizo todo el arte de la portada con técnicas avanzadas de modelado 3d. Además se hizo la diagramación completa de la novela con todas las formalidades exigidas por el cliente. </h3>
+                </nav>
+            </nav>
+            
+            <div class="galeria">
+                
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_p01.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_p02.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_p03.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_p04.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_p05.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_p06.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_p07.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_p08.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_p09.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_p10.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_p11.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_m01.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_m02.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_m03.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_m04.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_m05.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_m06.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_m07.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_m08.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_m09.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_m10.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/eduardo_m11.png" alt="Mueble de Estilo Amati">
+
+            
+            </div>
+            
+        </div>
+
+        <!--- total box2 ----------------------------->
+
+        <div id="arte_galeria2"      class="totalbox2 section_galery hidden_galery">
+            
+
+            <nav class="loading"><h2>LOADING</h2></nav>            
+
+
+            <nav class="lateral">
+                <nav class="lateral__contenido">
+                    <a class="secciones" href="#" onclick="showSection2('arte_galeria1', event)"><h3>Maquetación de Libros</h3></a>
+                    <a class="secciones" href="#" onclick="showSection2('arte_galeria2', event)"><h3>Arte y Diseño de Portadas</h3></a>
+                    <a class="secciones" href="#" onclick="showSection2('arte_galeria3', event)"><h3>Álbum de Música</h3></a>
+
+                </nav>
+
+                <nav class="lateral__titulo">
+                    <h2>Diagramación y Arte para Portadas</h2>
+                </nav>
+
+                <nav class="lateral__contenido">
+                    <h3>Algunas portadas que se hicieron en el año 2024 con IA. También se exhibe algunos procesos como la edición de las imágenes para corregir artefactos, composición y añadir efectos visuales.</h3>
+                </nav>
+            </nav>
+
+        
+            <div class="galeria">
+                
+                <img loading="lazy"class="img_vertical" src="portafolio/portadas_01.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/portadas_02.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/portadas_03.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/portadas_04.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/portadas_05.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/portadas_06.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/portadas_07.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/portadas_08.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/portadas_09.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/portadas_10.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/portadas_11.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/portadas_12.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/portadas_13.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/portadas_14.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/portadas_15.png" alt="Mueble de Estilo Amati">
+            </div>
+        </div>
+
+        <!--- total box2 ----------------------------->
+
+        <div id="arte_galeria3"      class="totalbox2 section_galery hidden_galery">
+
+            <nav class="loading"><h2>LOADING</h2></nav>  
+            
+            <nav class="lateral">
+                <nav class="lateral__contenido">
+                    <a class="secciones" href="#" onclick="showSection2('arte_galeria1', event)"><h3>Maquetación de Libros</h3></a>
+                    <a class="secciones" href="#" onclick="showSection2('arte_galeria2', event)"><h3>Arte y Diseño de Portadas</h3></a>
+                    <a class="secciones" href="#" onclick="showSection2('arte_galeria3', event)"><h3>Álbum de Música</h3></a>
+
+                </nav>
+
+                <nav class="lateral__titulo">
+                    <h2>Album "Anima Yana" de V.T.E.</h2>
+                </nav>
+
+                <nav class="lateral__contenido">
+                    <h3>Trabaje como artista y diagramador par el desarrollo de la carátula y el contenido del album "Anima Yana" de Vehementi Transmigrationem Entis.  </h3>
+                </nav>
+            </nav>
+        
+            <div class="galeria">
+               
+                <img loading="lazy"class="img_vertical" src="portafolio/metal_01.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/metal_02.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/metal_03.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/metal_04.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/metal_05.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/metal_06.png" alt="Mueble de Estilo Amati">
+                <img loading="lazy"class="img_vertical" src="portafolio/metal_07.png" alt="Mueble de Estilo Amati">
+                                
+            </div>            
+        </div>
+    </div>
+
+    <!-- Footer que será igual para todas las secciones -->
+    <div class="fire">
+    <footer id="footer">
+
+        <article class="footerbox__1">
+			
+			<a href="#" onclick="showSection('index')">
+				<img loading="lazy"class="footerlogo" src="img/logo_completo2.svg" alt="Mueble de Estilo Amati">
+			</a>
+			
+		</article>
+		
+		<article class="footerbox__2">
+			
+			<ul><a id="whatsapp" class="footer__2--buttonredes" href="https://wa.link/1noe4r" target="_blank" rel="noopener noreferrer">
+				<img loading="lazy"class="img_redes" src="img/redes/wapp.svg">
+				320 281 5952
+			</a></ul>
+
+            <!--
+            <ul><a id="instagram" class="footer__2--buttonredes" href="https://www.instagram.com/estiloamati?igsh=MTdhbzV1MXJoOTVkcQ==" target="_blank" rel="noopener noreferrer">
+				<img loading="lazy"class="img_redes" src="img/redes/instagram.svg">
+				@estiloamati
+			</a></ul>
+			
+			<!---<ul><a id="tiktok" class="footer__2--buttonredes" href="https://www.tiktok.com/@estiloamati" target="_blank" rel="noopener noreferrer">
+				<img loading="lazy"class="img_redes" src="img/redes/tiktok.svg">
+				@estiloamati
+			</a></ul>
+			
+			<ul><a id="facebook" class="footer__2--buttonredes" href="https:facebook.com" target="_blank" rel="noopener noreferrer">
+				<img loading="lazy"class="img_redes" src="img/redes/facebook.svg">
+				estilo amati
+			</a></ul>----->
+			
+			<ul><a id="correopersonal" class="footer__2--buttonredes" href="mailto:sergioleonardocruzpulido@gmail.com" target="_blank" rel="noopener noreferrer">
+				<img loading="lazy"class="img_redes" src="img/redes/gmail.svg">
+				Gmail
+			</a></ul>
+
+            <ul><a id="correounal" class="footer__2--buttonredes" href="mailto:slcruzp@unal.edu.co" target="_blank" rel="noopener noreferrer">
+				<img loading="lazy"class="img_redes" src="img/redes/gmail.svg">
+				slcruzp@unal.edu.co
+			</a></ul>
+
+            <ul><a id="artstation" class="footer__2--buttonredes" href="https://www.artstation.com/sergioleonardo" target="_blank" rel="noopener noreferrer">
+				<img loading="lazy"class="img_redes" src="img/redes/artstation.svg">
+				Art Station
+			</a></ul>
+			
+		</article>
+
+        <article class="footerbox__1">
+			<h3>Contenido registrado de uso privado.<br><br>Todos los derechos de uso para logos símbolos y elementos marcarios están protegidos.</h3>
+			
+			<h3>&copy; Sergio Cruz P.</h3>
+			
+		</article>
+        
+        		 
+	</footer>
+    <!---
+    <div class="plant-container">
+        <img loading="lazy"src="img/fondoplantas.png" alt="Plantas">
+    </div>
+    --->
+
+    </div>
+
+    <!-- Vincular jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Vincular Slick Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Vincular el archivo script.js -->
+    <script src="script.js"></script>
+</body>
+</html>
