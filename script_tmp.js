@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
           // Después de 2 segundos, quita la clase "visible"
           setTimeout(() => {
             entry.target.classList.remove("visible");
-          }, 8000); // 2 segundos
+          }, 1000); // 2 segundos
         }
       });
     });

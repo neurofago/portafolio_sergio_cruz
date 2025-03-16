@@ -441,6 +441,22 @@ header.sticky .header__nav:hover .header__nav--66__tipo:hover
 	min-width: 250px;
 }
 
+.totalbox__titular_icono
+{
+	position: relative;
+	
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width: auto;
+
+
+	
+	margin: 0vh 3vw;;
+	padding:6vw 6vw;
+	min-width: 250px;
+}
+
 .button_w
 {	
 
@@ -517,60 +533,16 @@ header.sticky .header__nav:hover .header__nav--66__tipo:hover
 	border-radius:3vmin;
 }
 
-
-
-
-
-
-
-
-
-
-.loading {
-	position: absolute;
-	top: 0vh;
-	right: 6vw;
-	height: 0vw;
-	width: 87.3vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 0vw;
-	background: #1d1d1dff;
-	backdrop-filter: blur(2px);
-	border-radius: 3vmin;
-	z-index: 1;
-	transition: 4s;
-	border: 0px solid #ffffff00;
+.img_icono_h
+{
+	position: center;
+	width: 50%;
+	min-width: 250px;
+	border-radius:0;
 }
 
-.loading.visible {
 
-	height: 46vw;
-	width: 87vw;
-	background: #1d1d1dff;
-	backdrop-filter: blur(8px);
-	border-radius: 3vmin;
-	border: 2px solid #b1f028aa;
-	
-	transition: 0.2s;
-}
 
-.loading h2 {
-	padding: 0;
-	margin: 0;
-	font-size: 6vmin;
-	transition: 3s;
-	color: #ffffff00;
-}
-
-.loading.visible h2 {
-	
-	font-size: 3vmin;
-	color: #ffffffff;
-	transition: 0.2s;
-}
 
 
 
@@ -600,7 +572,7 @@ header.sticky .header__nav:hover .header__nav--66__tipo:hover
 	backdrop-filter: blur(2px);
 	border-radius: 3vmin 0vw 3vmin 0vw;
 	z-index: 1;
-	transition: 1s;
+	transition: 2s;
 	border: 2px solid #ffffff00;
 }
 
@@ -608,22 +580,20 @@ header.sticky .header__nav:hover .header__nav--66__tipo:hover
 	padding: 6vw 4vw;
 	height: 100%;
 	width: 33vmax;
-	background: #1d1d1d66;
+	background: #1d1d1d99;
 	backdrop-filter: blur(8px);
 	border-radius: 0vw 3vmin 3vmin 0vw;
 	border: 2px solid #b1f028aa;
 }
 
 .lateral.visible {
-	padding: 0vw 0vw;
-	height: 46vw;
+	padding: 6vw 4vw;
+	height: 100%;
 	width: 33vmax;
-	background: #1d1d1d66;
+	background: #1d1d1d99;
 	backdrop-filter: blur(8px);
 	border-radius: 0vw 3vmin 3vmin 0vw;
 	border: 2px solid #b1f028aa;
-	
-	transition: 0.2s;
 }
 
 
@@ -636,7 +606,7 @@ header.sticky .header__nav:hover .header__nav--66__tipo:hover
 	align-items: center;
 	flex: none;
 	width: fit-content;
-	transition: 1s;
+	transition: 2s;
 }
 
 .lateral:hover .lateral__titulo {
@@ -644,7 +614,7 @@ header.sticky .header__nav:hover .header__nav--66__tipo:hover
 }
 
 .lateral.visible .lateral__titulo {
-	height: 0;
+	height: 30%;
 }
 
 
@@ -658,7 +628,7 @@ header.sticky .header__nav:hover .header__nav--66__tipo:hover
 	align-items: center;
 	flex-wrap: wrap;
 	width: 100%;
-	transition: 1s;
+	transition: 2s;
 }
 
 .lateral:hover .lateral__contenido {
@@ -666,7 +636,7 @@ header.sticky .header__nav:hover .header__nav--66__tipo:hover
 }
 
 .lateral.visible .lateral__contenido {
-	height: 0;
+	height: 70%;
 }
 
 
@@ -676,7 +646,7 @@ header.sticky .header__nav:hover .header__nav--66__tipo:hover
 	padding: 0;
 	margin: 0;
 	font-size: 1.8vmax;
-	transition: 1s;
+	transition: 2s;
 }
 
 .lateral:hover .lateral__titulo h2 {
@@ -699,7 +669,7 @@ header.sticky .header__nav:hover .header__nav--66__tipo:hover
 	margin: 0vw;
 	font-size: 0vmin;
 	color: #ffffff00;
-	transition: 1s;
+	transition: 2s;
 }
 
 .lateral:hover .lateral__contenido h3 {
@@ -710,10 +680,16 @@ header.sticky .header__nav:hover .header__nav--66__tipo:hover
 
 .lateral.visible .lateral__contenido h3 {
 	color: #fff;
-	font-size:0;
-	margin:0;
+	font-size: 2.5vmin;
+	margin: 1vw;
 }
 ´
+
+
+
+
+
+
 
 
 
@@ -731,6 +707,8 @@ header.sticky .header__nav:hover .header__nav--66__tipo:hover
 	margin:0px;
 	width: 0vw;
 	
+
+	
 	border-radius: 0.5vh;
 	transition: 1s;
 }
@@ -739,19 +717,82 @@ header.sticky .header__nav:hover .header__nav--66__tipo:hover
 {	
 	width: 20vw;
 	padding: 0.2vh 1vw 0.3vh 1vw;
-	margin:0px;
+	margin:2px;
 	border-radius: 0.5vh;
+	background-color:#ffffff33;
 	transition: 1s;
+
+}
+
+.lateral.visible .secciones
+{	
+	width: 20vw;
+	padding: 0.2vh 1vw 0.3vh 1vw;
+	margin:2px;
+	border-radius: 0.5vh;
+	background-color:#ffffff33;
+	transition: 1s;
+
 }
 
 .lateral:hover .secciones:hover 
 {
-	background-color:#b1f02899 ;
+	background-color:#b1f02899;
 	padding: 0.3vh 1vw 0.3vh 1vw;
 	margin: 0px;
 	width: 20vw;
 }
 
+
+
+
+
+.secciones_actual
+{	
+	position: relative;
+	display: flex;
+	flex-wrap: column;
+	justify-content: center;
+
+	padding: 0px;
+	margin:0px;
+	width: 0vw;
+	
+
+	
+	border-radius: 0.5vh;
+	transition: 1s;
+}
+
+.lateral:hover .secciones_actual
+{	
+	width: 20vw;
+	padding: 0.2vh 1vw 0.3vh 1vw;
+	margin:2px;
+	border-radius: 0.5vh;
+	background-color:#b1f02833;
+	transition: 1s;
+
+}
+
+.lateral.visible .secciones_actual
+{	
+	width: 20vw;
+	padding: 0.2vh 1vw 0.3vh 1vw;
+	margin:2px;
+	border-radius: 0.5vh;
+	background-color:#b1f02833;
+	transition: 1s;
+
+}
+
+.lateral:hover .secciones_actual:hover 
+{
+	background-color:#b1f02899;
+	padding: 0.3vh 1vw 0.3vh 1vw;
+	margin: 0px;
+	width: 20vw;
+}
 
 
 
