@@ -28,6 +28,14 @@
 }
 
 .slick-list {
+    
+	height: 40vw; /*46*/
+    width: auto; /*100%*/
+
+    margin: 0;
+	padding: 0;
+
+
     position: relative;
     display: block;
     overflow: hidden;
@@ -301,13 +309,13 @@
 .slick-dots li button:before {
     color: #fff; /* Cambia el color aquí */
     
-	font-size: 5vmin; /* Cambia el tamaño de los puntos */
+	font-size: 0vmin; /* Cambia el tamaño de los puntos */
 }
         
 /* Estilo para el punto de selección */
 .slick-dots li.slick-active button:before {
     color: #fff; /* Cambia el color del punto de selección */
-    font-size: 5vmin;
+    font-size: 0vmin;
 }
 /*# sourceMappingURL=slick-theme.min.css.map */
 
