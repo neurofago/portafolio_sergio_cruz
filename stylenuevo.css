@@ -540,7 +540,9 @@ header.sticky .header__nav:hover .header__nav--66__tipo:hover
 .img_icono_h
 {
 	position: center;
-	width: 50%;
+	margin: 0;
+	padding: 3vw;
+	width: 65%;
 	min-width: 250px;
 	border-radius:0;
 }

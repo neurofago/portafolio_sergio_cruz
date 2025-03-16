@@ -77,48 +77,67 @@ document.querySelectorAll('.mi-elemento').forEach(function(elemento) {
     });
 });
 
+
+
+
+
 // Evento de scroll centrado
-let isAdjusting = false; // Variable para controlar el magnetismo
 
-window.addEventListener("scroll", () => {
-    if (isAdjusting) return; // Detener el efecto si está en enfriamiento
+let isAdjusting = false; // Controla si se está ejecutando el ajuste
+let userIsInteracting = false; // Indica si el usuario está interactuando
+let interactionTimeout; // Almacena el temporizador de inactividad
 
-    // Selecciona todos los elementos con la clase 'magnetic'
+const checkAndCenter = () => {
+    if (userIsInteracting || isAdjusting) return; // No ejecutar si el usuario aún interactúa
+
     const magneticElements = document.querySelectorAll(".totalbox1, .totalbox2");
     const viewportHeight = window.innerHeight;
 
     magneticElements.forEach((element) => {
         const elementRect = element.getBoundingClientRect();
-        const centerOffset = 10; // Rango muerto de 50px alrededor del centro del viewport
+        const centerOffset = 10; // Rango muerto de 10px alrededor del centro
 
-        // Verifica si el elemento está cerca del centro del viewport
         if (
             elementRect.top + centerOffset < viewportHeight / 2 &&
             elementRect.bottom - centerOffset > viewportHeight / 2
         ) {
-            // Centra el elemento en el viewport
-            const offset =
-                elementRect.top + elementRect.height / 2 - viewportHeight / 2;
+            const offset = elementRect.top + elementRect.height / 2 - viewportHeight / 2;
 
             window.scrollBy({
-                top: offset,
+                top: offset * 1, // Movimiento más suave (50% del ajuste necesario)
                 behavior: "smooth",
             });
 
-            // Agrega una clase para resaltar el elemento centrado
             element.classList.add("centered");
 
-            // Activa el enfriamiento del efecto magnético
             isAdjusting = true;
             setTimeout(() => {
-                isAdjusting = false; // Desactiva el enfriamiento después de 500ms
-            }, 400);
+                isAdjusting = false;
+            }, 500);
         } else {
-            // Quita la clase si el elemento deja de estar centrado
             element.classList.remove("centered");
         }
     });
-});
+};
+
+// Detecta interacción del usuario (scroll o teclado)
+const resetInteractionTimer = () => {
+    userIsInteracting = true;
+    clearTimeout(interactionTimeout);
+    interactionTimeout = setTimeout(() => {
+        userIsInteracting = false;
+        checkAndCenter(); // Activa el centrado tras 1s de inactividad
+    }, 1000);
+};
+
+// Eventos de usuario
+window.addEventListener("scroll", resetInteractionTimer);
+window.addEventListener("keydown", resetInteractionTimer);
+
+
+
+
+
 
 // Script para mostrar el elemento cuando está en el viewport
 document.addEventListener("DOMContentLoaded", () => {
@@ -140,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
           // Después de 2 segundos, quita la clase "visible"
           setTimeout(() => {
             entry.target.classList.remove("visible");
-          }, 8000); // 2 segundos
+          }, 6000); // 6 segundos
         }
       });
     });
