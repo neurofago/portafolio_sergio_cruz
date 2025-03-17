@@ -59,7 +59,7 @@ $(document).ready(function () {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: true,
+        dots: false,
         arrows: true,
         autoplay: true,
         autoplaySpeed: 8000,
@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
           // Después de 2 segundos, quita la clase "visible"
           setTimeout(() => {
             entry.target.classList.remove("visible");
-          }, 6000); // 6 segundos
+          }, 4000); // 6 segundos
         }
       });
     });
